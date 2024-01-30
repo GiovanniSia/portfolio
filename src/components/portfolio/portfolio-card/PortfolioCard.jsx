@@ -1,6 +1,8 @@
-const PortfolioCard = (title,description,imgPreview,imgs,tecnologies,show) => {
+import './PortfolioCard.css';
+
+const PortfolioCard = ({title,description,imgPreview,imgs,tecnologies,show,i}) => {
     return (
-        <div className='portfolio-card-container'>
+        <div className='portfolio-card-container' key={i}>
             <div className={`portfolio-card`}>
                 <img src={`${imgPreview}`} />
             </div>
@@ -23,3 +25,4 @@ const PortfolioCard = (title,description,imgPreview,imgs,tecnologies,show) => {
         </div>
     );
 }
+export default PortfolioCard;

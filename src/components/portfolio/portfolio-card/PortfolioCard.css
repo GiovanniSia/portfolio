@@ -1,0 +1,25 @@
+.portfolio-card-container {
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    display: flex;
+    border:1px solid red;
+    border-radius: 20px;
+    background-color: #394953;
+}
+
+.portfolio-card {
+    width: 100%;
+    height: 50%;
+    margin:auto;
+}
+
+.portfolio-card img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.portfolio-card-expanded{
+    display: none;
+}
