@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.button-start {
+  width: 47%;
+  height: auto;
+  margin: auto;
+  background-color: transparent;
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  border: 2px solid #1CB698;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-start:hover {
+  background-color: #1CB698;
+  color: #1E2326;
+}

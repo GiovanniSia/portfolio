@@ -1,7 +1,11 @@
-import "./styles/normalize.css";
+import Start from "./components/start/Start";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Start />
+    </>
+  );
 }
 
 export default App;

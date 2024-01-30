@@ -1,0 +1,35 @@
+* {
+  /* border: 2px solid yellow; */
+}
+
+.start {
+  background: #1E2326;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-center {
+  width: 50%;
+  height: 50%;
+  max-width: 800px;
+  height: 100%;
+  text-align: center;
+}
+
+.start-center img {
+  width: 100%;
+  height: 50%;
+  /* backgground-size cubre toda la pantalla */
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.buttons-start {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
