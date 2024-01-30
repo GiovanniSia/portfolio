@@ -3,16 +3,22 @@
     height: 100%;
     margin:auto;
     display: flex;
-    border:1px solid red;
     border-radius: 20px;
     background-color: #394953;
+    transition: all .1s ease-in;
+}
+
+.portfolio-card-container:hover {
+    filter: brightness(120%);
+    border: 3px solid #1CB698;
 }
 
 .portfolio-card {
-    width: 100%;
+    width: 80%;
     height: 50%;
     margin:auto;
 }
+
 
 .portfolio-card img{
     width: 100%;
