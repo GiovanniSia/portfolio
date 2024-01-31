@@ -13,6 +13,7 @@
 }
 
 .start-center {
+  border: 2px solid yellow;
   width: 70%;
   height: 50%;
   max-width: 800px;
@@ -25,6 +26,7 @@
   height: 50%;
   /* backgground-size cubre toda la pantalla */
   background-size: cover;
+  object-fit: contain;
 }
 
 .buttons-start {
@@ -32,14 +34,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 6%;
 }
 
-@media screen and (max-width:950px) {}
 
 @media screen and (max-width:800px) {
   .start-center {
     width: 100%;
-
   }
 }
