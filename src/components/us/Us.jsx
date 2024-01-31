@@ -7,10 +7,8 @@ function Us() {
     <div className="us">
       <div className="title-first-us">
         <h1>Nosotros</h1>
-        <p>
-          Somos un grupo de estudiantes y graduados en informática <br />
-          desarrollamos su idea o solucionamos sus problemas
-        </p>
+        <p>Somos un grupo de estudiantes y graduados en informática.</p>
+        <p>Desarrollamos su idea o solucionamos sus problemas.</p>
       </div>
 
       <div className="title-second-us">

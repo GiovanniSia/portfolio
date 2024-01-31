@@ -12,37 +12,42 @@
   background: #1E2326;
   color: #fff;
   width: 100%;
+  max-width: 1440px;
   height: 100vh;
-  padding: 20px;
+  margin: auto;
+  padding: 60px 0;
 }
 
 .title-first-us h1,
 .title-second-us h1 {
   text-align: center;
   font-family: serif;
-  font-size: 45px;
+  font-size: 50px;
+  padding: 10px 0;
 }
 
 .title-first-us p {
   font-family: 'Questrial', sans-serif;
   text-align: center;
   font-size: 30px;
-  margin: 29px 0;
+  margin: 15px 0;
 }
 
 .two-column {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .two-column img {
   padding: 20px 0;
-  width: 700px;
-  height: 500px;
+  width: 100%;
+  height: auto;
 }
 
 .two-column h2 {
+  color: rgb(207, 225, 241);
   font-size: 40px;
   text-align: center;
 }
@@ -52,4 +57,31 @@
   text-align: center;
   font-size: 26px;
   margin: 20px;
+}
+
+@media screen and (max-width:550px) {
+  .two-column p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:350px) {
+
+  .title-first-us h1,
+  .title-second-us h1 {
+    font-size: 35px;
+  }
+
+  .title-first-us p {
+    font-size: 25px;
+  }
+
+  .two-column h2 {
+    font-size: 30px;
+  }
+
+  .two-column p {
+    font-size: 20px;
+    margin: 15px;
+  }
 }
