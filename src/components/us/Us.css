@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 .portfolio-title-undernline {
   width: 40%;
   background-color: #fff;
@@ -11,18 +13,18 @@
   color: #fff;
   width: 100%;
   height: 100vh;
-  padding: 0 20px;
+  padding: 20px;
 }
-
 
 .title-first-us h1,
 .title-second-us h1 {
-  font-family: 'DM Serif Display', serif;
-  font-size: 50px;
-
+  text-align: center;
+  font-family: serif;
+  font-size: 45px;
 }
 
 .title-first-us p {
+  font-family: 'Questrial', sans-serif;
   text-align: center;
   font-size: 30px;
   margin: 29px 0;
@@ -35,14 +37,19 @@
 }
 
 .two-column img {
+  padding: 20px 0;
   width: 700px;
+  height: 500px;
 }
 
 .two-column h2 {
-  font-size: 35px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .two-column p {
+  font-family: 'Questrial', sans-serif;
   text-align: center;
+  font-size: 26px;
   margin: 20px;
 }

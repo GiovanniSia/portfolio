@@ -1,5 +1,5 @@
 import section1 from "../../img/us/section1.svg";
-import section2 from "../../img/us/section2.svg";
+import section2 from "../../img/us/xd.svg";
 import "./Us.css";
 
 function Us() {
