@@ -9,11 +9,10 @@
 
 
 .us {
+  box-sizing: border-box;
   background: #1E2326;
   color: #fff;
-  width: 100%;
   max-width: 1440px;
-  height: 100vh;
   margin: auto;
   padding: 60px 0;
 }
@@ -38,6 +37,7 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .two-column img {
