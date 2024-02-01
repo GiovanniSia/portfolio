@@ -1,6 +1,6 @@
 import './Portfolio.css';
 import PortfolioCard from './portfolio-card/PortfolioCard';
-
+import { v4 as uuidv4 } from 'uuid';
 import { proyectsElements } from '../../service/proyectsLoader.js';
 import { useEffect, useState } from 'react';
 
@@ -34,9 +34,10 @@ const Portfolio = () => {
                 <div className='nav-portfolio-elem' onClick={()=>setIsFilterLandingPage(false)}>Software Personalizado</div>
             </div>
             <div className='portfolio-cards-container'>
-                {proyectsList.map((elem, i) => (
+                {proyectsList.map((elem, i=uuidv4()) => (
                     defineElementsToShow(elem) &&
                         <PortfolioCard
+                        key={i}
                         title={elem.title}
                         description={elem.description}
                         imgPreview={elem.imgPreview}
