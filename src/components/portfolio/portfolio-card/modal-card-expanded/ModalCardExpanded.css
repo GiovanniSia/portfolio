@@ -7,6 +7,11 @@
     border-bottom: none !important;
 }
 
+.modal-header .btn-close{
+    filter: invert(100%) !important;
+    color:#fff !important;
+}
+
 .modal-footer {
     border-top: none !important;
     justify-content: flex-start !important;

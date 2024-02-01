@@ -44,6 +44,7 @@
 .nav-portfolio-elem{
     font-size: 18px;
     margin:15px auto 0 auto;
+    text-align: center;
 }
 
 .nav-portfolio-elem:hover {
@@ -60,17 +61,22 @@
     margin: 0 auto;
 }
 
-/* .portfolio-cards-container ul {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
+@media (max-width: 768px){
 
-.portfolio-cards-container ul li{
-    width: 30%;
-    height: 50%;
-    margin:1% auto;
-} */
+    .portfolio-title,.nav-portfolio{
+        width: 90%;
+    }
+
+    .portfolio-title h1 {
+        font-size: 40px;       
+    }
+
+    .nav-portfolio-elem{
+        font-size: 15px;
+    }
+
+    .portfolio-cards-container{
+        width: 80%;
+        flex-direction: column;
+    }
+}

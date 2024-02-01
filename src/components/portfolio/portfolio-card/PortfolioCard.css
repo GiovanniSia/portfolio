@@ -1,7 +1,4 @@
 .portfolio-card-container {
-    /* width: 100%;
-    height: 100%; */
-    /* margin:auto; */
     display: flex;
     border-radius: 20px;
     background-color: #394953;
@@ -11,9 +8,15 @@
     margin:1% auto;
 }
 
-.portfolio-card-container:hover {
+.portfolio-card-container:hover, .portfolio-card-container:focus {
     filter: brightness(120%);
     border: 3px solid #1CB698;
+}
+
+/*Para que funcione el active en mobile se debe poner en este orden*/
+.portfolio-card-container:active{
+    filter: brightness(120%);
+    border:none;
 }
 
 .portfolio-card {
@@ -21,7 +24,6 @@
     height: 50%;
     margin:auto;
 }
-
 
 .portfolio-card img{
     width: 100%;
@@ -31,4 +33,12 @@
 
 .portfolio-card-expanded{
     display: none;
+}
+
+@media (max-width: 768px){
+    .portfolio-card-container {
+        width: 100%;
+        margin: 0 auto 25px auto;
+    }
+
 }
