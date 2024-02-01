@@ -43,6 +43,7 @@
 
 .nav-portfolio-elem{
     font-size: 18px;
+    margin:15px auto 0 auto;
 }
 
 .nav-portfolio-elem:hover {
@@ -51,14 +52,15 @@
 }
 
 .portfolio-cards-container{
+    width: 80%;
     min-height: 70%;
-    margin: auto;
-    height: auto;
     display: flex;
-
+    flex-wrap: wrap;
+    flex:1;
+    margin: 0 auto;
 }
 
-.portfolio-cards-container ul {
+/* .portfolio-cards-container ul {
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -71,4 +73,4 @@
     width: 30%;
     height: 50%;
     margin:1% auto;
-}
+} */

@@ -1,11 +1,20 @@
 import './PortfolioCard.css';
+import ModalCardExpanded from './modal-card-expanded/ModalCardExpanded';
 
 const PortfolioCard = ({title,description,imgPreview,imgs,tecnologies,show,i}) => {
     return (
         <div className='portfolio-card-container' key={i}>
             <div className={`portfolio-card`}>
-                <img src={`${imgPreview}`} />
+                <img  src={imgPreview}/>
             </div>
+            <ModalCardExpanded 
+                title={title}
+                description={description}
+                imgs={imgs}
+                tecnologies={tecnologies}
+                show={show}
+            />
+            {/*
             <div className={`portfolio-card-expanded ${show ? '' : 'closed'}`}>
                 <div className="portfolio-card-expanded-container">
                     <div className="portfolio-card-expanded-title">
@@ -22,6 +31,7 @@ const PortfolioCard = ({title,description,imgPreview,imgs,tecnologies,show,i}) =
                     </div>
                 </div>
             </div>
+            */}
         </div>
     );
 }

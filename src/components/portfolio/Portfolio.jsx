@@ -9,9 +9,9 @@ const Portfolio = () => {
     const [proyectsList, setProyectsList] = useState(proyectsElements);
     const [itemActiveIndex, setItemActiveIndex] = useState();
 
-    useEffect(()=>{
+    useEffect(() => {
         setProyectsList(proyectsElements);
-    },[])
+    }, [])
 
     return (
         <section id='section-portfolio' className='section-portfolio'>
@@ -25,25 +25,40 @@ const Portfolio = () => {
                 <div className='nav-portfolio-elem'>Software Personalizado</div>
             </div>
             <div className='portfolio-cards-container'>
-                <ul>
-                    {proyectsList.map((elem, i) => (
-                        <li 
-                        key={i}
-                        onClick={() => { setItemActiveIndex(i)}}>
-                            <PortfolioCard
-                                title={elem.title}
-                                description={elem.description}
-                                imgPreview={elem.imgPreview}
-                                imgs={elem.imgs}
-                                tecnologies={elem.tecnologies}
-                                show={itemActiveIndex===i}
-                                i={i}
-                            />
-                        </li>
-                    ))}
-                </ul>
+                {proyectsList.map((elem, i) => (
+                    <PortfolioCard
+                        title={elem.title}
+                        description={elem.description}
+                        imgPreview={elem.imgPreview}
+                        imgs={elem.imgs}
+                        tecnologies={elem.tecnologies}
+                        show={itemActiveIndex === i}
+                        i={i}
+                        onClick={() => { setItemActiveIndex(i) }}
+                    />
+                ))}
             </div>
         </section>
     );
 }
 export default Portfolio;
+
+/*
+<ul>
+{proyectsList.map((elem, i) => (
+    <li 
+    key={i}
+    onClick={() => { setItemActiveIndex(i)}}>
+        <PortfolioCard
+            title={elem.title}
+            description={elem.description}
+            imgPreview={elem.imgPreview}
+            imgs={elem.imgs}
+            tecnologies={elem.tecnologies}
+            show={itemActiveIndex===i}
+            i={i}
+        />
+    </li>
+))}
+</ul>
+*/
