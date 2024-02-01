@@ -45,7 +45,6 @@
     color: #0B87E0;
 }
 
-
 .nav-portfolio-elem:hover {
     color: #0B87E0;
     cursor: pointer;
@@ -61,7 +60,6 @@
 }
 
 @media (max-width: 768px){
-
     .portfolio-title,.nav-portfolio{
         width: 90%;
     }
