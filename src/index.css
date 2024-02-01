@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background: #1E2326;
 }

@@ -6,6 +6,7 @@
   text-align: center;
   display: flex;
   flex-direction: row;
+  background: #1E2326;
 }
 
 .contact-logo {
@@ -84,7 +85,6 @@
   }
 
   .contact-logo {
-    border: 2px solid yellow;
     width: 100%;
   }
 
