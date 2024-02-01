@@ -15,10 +15,10 @@ const ModalCardExpanded = ({ title, description, imgs, tecnologies, show, handle
     setIndex(selectedIndex);
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log("imagenes:");
     console.log(imgs[0]);
-  },[])
+  }, [])
 
   return (
     <Modal
@@ -38,10 +38,13 @@ const ModalCardExpanded = ({ title, description, imgs, tecnologies, show, handle
           {description}
         </p>
 
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel activeIndex={index} onSelect={handleSelect} >
           {imgs.map(i => (
-            <Carousel.Item>
-              <img src={i} />
+            <Carousel.Item interval={10000}>
+              {i.startsWith('http') ?
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YawYgWzxTy0?si=eZBYDMz9Nx4My7R9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                : <img src={i} />}
+
             </Carousel.Item>
           ))}
         </Carousel>
