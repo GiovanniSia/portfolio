@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 const Portfolio = () => {
 
     const [proyectsList, setProyectsList] = useState(proyectsElements);
-    const [itemActiveIndex, setItemActiveIndex] = useState();
+    // const [itemActiveIndex, setItemActiveIndex] = useState();
 
     useEffect(() => {
         setProyectsList(proyectsElements);
@@ -32,9 +32,8 @@ const Portfolio = () => {
                         imgPreview={elem.imgPreview}
                         imgs={elem.imgs}
                         tecnologies={elem.tecnologies}
-                        show={itemActiveIndex === i}
-                        i={i}
-                        onClick={() => { setItemActiveIndex(i) }}
+                        // show={itemActiveIndex === i}
+                        // i={i}
                     />
                 ))}
             </div>
