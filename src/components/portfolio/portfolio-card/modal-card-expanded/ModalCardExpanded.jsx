@@ -15,11 +15,6 @@ const ModalCardExpanded = ({ title, description, imgs, tecnologies, show, handle
     setIndex(selectedIndex);
   };
 
-  useEffect(() => {
-    console.log("imagenes:");
-    console.log(imgs[0]);
-  }, [])
-
   return (
     <Modal
       size="lg"
@@ -41,15 +36,15 @@ const ModalCardExpanded = ({ title, description, imgs, tecnologies, show, handle
         <Carousel activeIndex={index} onSelect={handleSelect} >
           {imgs.map(i => (
             <Carousel.Item interval={10000}>
-              {i.startsWith('http') ?
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/YawYgWzxTy0?si=eZBYDMz9Nx4My7R9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                : <img src={i} />}
+              {i.startsWith('http') 
+              ?
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YawYgWzxTy0?si=zQACpV0Q8Nt7aq0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              : 
+              <img src={i} />}
 
             </Carousel.Item>
           ))}
         </Carousel>
-
-
 
       </Modal.Body>
       <Modal.Footer>
@@ -61,7 +56,3 @@ const ModalCardExpanded = ({ title, description, imgs, tecnologies, show, handle
   );
 }
 export default ModalCardExpanded;
-
-/*
-
-*/
