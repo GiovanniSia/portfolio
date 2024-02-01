@@ -1,6 +1,5 @@
 import './ModalCardExpanded.css';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import { useEffect, useState } from 'react';
 
@@ -17,6 +16,7 @@ const ModalCardExpanded = ({ title, description, imgs, tecnologies, show, handle
   };
 
   useEffect(()=>{
+    console.log("imagenes:");
     console.log(imgs[0]);
   },[])
 
@@ -38,17 +38,20 @@ const ModalCardExpanded = ({ title, description, imgs, tecnologies, show, handle
           {description}
         </p>
 
-        {imgs.forEach( i => {
-          <img src={i} />
-        })}                   
-
+        <Carousel activeIndex={index} onSelect={handleSelect}>
+          {imgs.map(i => (
+            <Carousel.Item>
+              <img src={i} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
 
 
 
       </Modal.Body>
       <Modal.Footer>
         {tecnologies.map(t => (
-          <Button variant="success">{t}</Button>
+          <button className='modal-button-tecnology'>{t}</button>
         ))}
       </Modal.Footer>
     </Modal>
@@ -57,15 +60,5 @@ const ModalCardExpanded = ({ title, description, imgs, tecnologies, show, handle
 export default ModalCardExpanded;
 
 /*
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-          {imgs.forEach(i => {
-            <Carousel.Item>
-              <img src={i} />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          })}
-        </Carousel>
+
 */

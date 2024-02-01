@@ -6,3 +6,28 @@
 .modal-header {
     border-bottom: none !important;
 }
+
+.modal-footer {
+    border-top: none !important;
+    justify-content: flex-start !important;
+}
+
+.carousel-item.active{
+    display:flex !important;
+}
+
+.carousel-item img{
+    margin:auto;
+}
+
+.modal-button-tecnology{
+    background-color: #1CB698 !important;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color:#fff;
+    padding: 5px 10px;
+}
+
+.modal-button-tecnology:hover {
+    filter: brightness(110%);
+}
