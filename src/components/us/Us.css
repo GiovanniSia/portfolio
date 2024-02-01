@@ -47,12 +47,12 @@
 }
 
 .two-column h2 {
-  color: rgb(207, 225, 241);
   font-size: 40px;
   text-align: center;
 }
 
 .two-column p {
+  color: rgb(207, 225, 241);
   font-family: 'Questrial', sans-serif;
   text-align: center;
   font-size: 26px;
