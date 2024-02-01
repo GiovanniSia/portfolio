@@ -38,7 +38,13 @@
     font-size: 18px;
     margin:15px auto 0 auto;
     text-align: center;
+    color: #fff;
 }
+
+.nav-portfolio-elem.selected {
+    color: #0B87E0;
+}
+
 
 .nav-portfolio-elem:hover {
     color: #0B87E0;

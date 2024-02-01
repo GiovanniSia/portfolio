@@ -29,9 +29,15 @@ const Portfolio = () => {
                 <h1>Nuestro Portfolio</h1>
             </div>
             <div className='nav-portfolio'>
-                <div className='nav-portfolio-elem' onClick={()=>setIsFilterLandingPage(undefined)}>Todo</div>
-                <div className='nav-portfolio-elem' onClick={()=>setIsFilterLandingPage(true)}>Landing Pages</div>
-                <div className='nav-portfolio-elem' onClick={()=>setIsFilterLandingPage(false)}>Software Personalizado</div>
+                <div 
+                className={`nav-portfolio-elem ${isFilterLandingPage===undefined && 'selected'}`} 
+                onClick={()=>setIsFilterLandingPage(undefined)}>Todo</div>
+                <div 
+                className={`nav-portfolio-elem ${isFilterLandingPage && 'selected'}`} 
+                onClick={()=>setIsFilterLandingPage(true)}>Landing Pages</div>
+                <div 
+                className={`nav-portfolio-elem ${isFilterLandingPage===false && 'selected'}`} 
+                onClick={()=>setIsFilterLandingPage(false)}>Software Personalizado</div>
             </div>
             <div className='portfolio-cards-container'>
                 {proyectsList.map((elem, i=uuidv4()) => (
